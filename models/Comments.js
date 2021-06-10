@@ -24,6 +24,13 @@ Comments.init(
                 model: 'users',
                 key: 'id'
             },
+        },
+        post_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'posts',
+                key: 'id'
+            }, 
         }
     },
 
